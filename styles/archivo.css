@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+body{
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #222;
+}
+
+.menu-principal{
+  background-color: #0f0624;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+.nav-contenedor{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+}
+
+.logo img{
+  height: 32px;
+  display: block;
+}
+
+.nav-enlaces a{
+  color: #fff;
+  text-decoration: none;
+  margin-left: 22px;
+  font-size: 14px;
+}
+
+.encabezado{
+  background-image: url('../assets/images/headerBg.png');
+  color: #fff;
+  padding-top: 80px;
+  min-height: 720px;
+  display: flex;
+  align-items: center;
+}
+
+.encabezado-contenedor{
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.encabezado-izquierda{
+  max-width: 58%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.marca-logo{
+  width: 110px;
+  height: auto;
+  display: block;
+}
+
+.titulo-principal{
+  font-family: 'Raleway', sans-serif;
+  font-size: 44px;
+  line-height: 1.02;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 6px 0;
+}
+
+.linea-separadora{
+  width: 70px;
+  height: 3px;
+  background: gray;
+}
+
+.descripcion{
+  max-width: 70%;
+  color: white;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.boton-descarga{
+  width: 140px;
+  padding: 12px 16px;
+  background: transparent;
+  border-color: lightgray;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 6px;
+}
+
+.caja-prueba{
+  width: 360px;
+  background: #fff;
+  color: #222;
+  border-radius: 3px;
+}
+
+.titulo-caja{
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  background: #f5f5f5;
+  padding: 18px 16px;
+  margin: 0;
+}
