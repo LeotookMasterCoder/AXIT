@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 
 body{
@@ -147,6 +147,13 @@ p, li, a, .descripcion, .campo {
   margin-top: 170px;     
   border-radius: 3px 3px;
 }
+.Rectangulo2 {
+  background: #f9974a;
+  border: none;
+  padding: 1px 20px;   
+  cursor: pointer;
+  transform: translatex(2px);
+}
 
 .boton-descarga {
    width: 140px;
@@ -165,7 +172,7 @@ p, li, a, .descripcion, .campo {
 }
 
 .barra-redes{
-  background: #f5f5f5;
+  background: #fff;
   border-bottom: 1px solid #eee;
   padding: 14px 0;
 }
@@ -180,7 +187,7 @@ p, li, a, .descripcion, .campo {
 }
 
 .iconos-redes img{
-  width: 22px;
+  width: 50px;
   margin-left: 12px;
   opacity: 0.6;
 }
@@ -328,6 +335,7 @@ p, li, a, .descripcion, .campo {
 .precios{
   background: #f3f3f3;
   padding: 60px 0;
+  font-family: 'Raleway', sans-serif;
 }
 
 .precios-contenedor{
@@ -352,6 +360,12 @@ p, li, a, .descripcion, .campo {
   transition: transform 0.3s;
   margin: 20px;
 }
+.plan-popular {
+  background: #333;
+  color: #fff;
+  padding: 20px 40px;
+  margin-top: -20px;
+}
 
 .plan-header {
   background: #333;
@@ -369,6 +383,10 @@ p, li, a, .descripcion, .campo {
 .plan-precio {
   font-size: 70px;
   font-weight: 700px;
+}
+.plan-precio .simbolo {
+  font-size: 30px; 
+  margin-right: 4px; 
 }
 
 .plan-detalle {
@@ -458,24 +476,14 @@ p, li, a, .descripcion, .campo {
 }
 
 @media (max-width: 1279px) {
-  .tarjetas-genial {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .tarjeta-genial {
-    width: 45%;
-    margin-bottom: 20px;
-  }
-  .planes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
   .plan {
     width: 45%;
     margin-bottom: 20px;
   }
+  .logo img{
+  height: 20px;
+  display: block;
+}
   .boton-Popular1 {
   background: #f9974a;
   border: none;
@@ -487,10 +495,16 @@ p, li, a, .descripcion, .campo {
   transform: translateY(-300px);
   border-radius: 3px 3px;
   }
-  .lista-testimonios {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  .Rectangulo {
+  background: #f9974a;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 20px;   
+  width: 100%;
+  cursor: pointer;
+  transform: translateY(-290px);
+  border-radius: 3px 3px;
   }
   .testimonio {
     width: 45%;
@@ -498,40 +512,94 @@ p, li, a, .descripcion, .campo {
   }
 }
 
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
+  .encabezado {
+    padding-top: 100px;
+    background-size: auto;
+  }
+  .iconos-redes img {
+    width: 25px;
+    margin-left: 8px;
+  }
+  .banner-final {
+    padding-top: 50px;
+    background-size: auto;
+  }
+
+  .tarjetas-genial {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .tarjeta-genial {
-    width: 90%;
+    width: 45%;
+    margin-bottom: 20px;
   }
-  .plan {
-    width: 90%;
+
+  .planes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  .testimonio {
-    width: 90%;
+
+  .lista-testimonios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
 @media (max-width: 480px) {
-  .tarjeta-genial {
-    width: 100%;
+  .encabezado {
+    padding-top: 50px;
+    background-size: auto;
   }
-  .plan {
-    width: 100%;
+  .iconos-redes img {
+    width: 25px;
+    margin-left: 8px;
   }
-  .testimonio {
-    width: 100%;
-  }
-.nav-contenedor {
-    flex-direction: column;
-    align-items: center;
-  }
-  .nav-enlaces {
+
+  .tarjetas-genial {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  .nav-enlaces a {
-    margin: 0;
-    font-size: 16px;
+
+  .tarjeta-genial {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+  
+  .caja-prueba {
+    width: 200px;
+    font-size: 50px;
+    margin-right: 40px;
+    background: #fff;
+    color: #222;
+    border-radius: 3px;
+    margin-top: auto;
+
+  }
+  .campo{
+  height: 20px;
+  border-bottom: 1px solid #eee;
+  padding-left: 25px;
+  display: flex;
+  align-items: center;
+  color: #bdbdbd;
+  font-size: 20px;
+}
+
+  .planes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .lista-testimonios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
