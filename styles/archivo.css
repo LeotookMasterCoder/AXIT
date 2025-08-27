@@ -21,10 +21,7 @@ p, li, a, .descripcion, .campo {
 .menu-principal{
   background-color: #0f0624;
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  z-index: 50;
 }
 
 .nav-contenedor{
@@ -50,7 +47,7 @@ p, li, a, .descripcion, .campo {
 
 .encabezado{
   background-image: url('../assets/images/headerBg.png');
-  background-size: contain;
+  background-size: auto;
   background-repeat: no-repeat;
   background-position: center;
   color: #fff;
@@ -189,7 +186,6 @@ p, li, a, .descripcion, .campo {
 .iconos-redes img{
   width: 50px;
   margin-left: 12px;
-  opacity: 0.6;
 }
 .texto-naranja {
   color: #f9974a;
@@ -357,20 +353,18 @@ p, li, a, .descripcion, .campo {
   width: 300px;
   text-align: center;
   border: none;
-  transition: transform 0.3s;
   margin: 20px;
 }
 .plan-popular {
   background: #333;
   color: #fff;
   padding: 20px 40px;
-  margin-top: -20px;
 }
 
 .plan-header {
   background: #333;
   color: #fff;
-  padding: 20px 0;
+  padding: 30px 0px;
 }
 
 .plan-nombre {
@@ -393,7 +387,6 @@ p, li, a, .descripcion, .campo {
   background: #fff;
   color: #777;
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
   padding: 12px 0;
   border-top: 1px solid #ddd;
 }
@@ -480,7 +473,7 @@ p, li, a, .descripcion, .campo {
     width: 45%;
     margin-bottom: 20px;
   }
-  .logo img{
+  .logo img {
   height: 20px;
   display: block;
 }
@@ -492,30 +485,26 @@ p, li, a, .descripcion, .campo {
   padding: 12px 20px;   
   width: 100%;
   cursor: pointer;
-  transform: translateY(-300px);
-  border-radius: 3px 3px;
+  justify-content: center;
   }
   .Rectangulo {
   background: #f9974a;
   border: none;
   color: #fff;
-  font-weight: 600;
-  padding: 12px 20px;   
+  padding: 5px;   
   width: 100%;
   cursor: pointer;
-  transform: translateY(-290px);
-  border-radius: 3px 3px;
+  position: relative;
+  bottom: 10px;
   }
   .testimonio {
     width: 45%;
     margin-bottom: 20px;
   }
-}
 
   @media (max-width: 768px) {
   .encabezado {
     padding-top: 100px;
-    background-size: auto;
   }
   .iconos-redes img {
     width: 25px;
@@ -524,6 +513,115 @@ p, li, a, .descripcion, .campo {
   .banner-final {
     padding-top: 50px;
     background-size: auto;
+  }
+  .boton-get {
+  background: #f9974a;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 170px;     
+  border-radius: 3px 3px;
+}
+
+  .tarjetas-genial {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .planes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .sublista-imagen{
+  background-size: auto;
+  background-position: center;
+  justify-content: center;
+  width: 300px;
+  height: 200px;
+  }
+
+  .lista-testimonios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+@media (min-width: 480px) {
+  .encabezado {
+    padding-top: 50px;
+    background-size: auto;
+  }
+
+  .encabezado-contenedor {
+    flex-direction: column;
+    align-items: center; 
+    padding: 20px;
+  }
+
+  .encabezado-izquierda {
+    max-width: 100%; 
+    align-items: center;
+    text-align: center; 
+    gap: 12px;
+  }
+
+  .marca-logo {
+    width: 80px; 
+    margin: 0 auto 15px;
+    display: block;
+  }
+
+  .titulo-principal {
+    font-size: 28px;
+    margin: 0;
+  }
+
+  .linea-separadora {
+    margin: 10px auto; 
+  }
+
+  .descripcion {
+    max-width: 90%; 
+    font-size: 13px; 
+  }
+
+  .boton-descarga {
+    width: 120px;
+    padding: 10px 12px; 
+    font-size: 13px; 
+    margin: 10px auto; 
+  }
+
+  .caja-prueba {
+    width: 90%;
+    max-width: 280px; 
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+
+  .titulo-caja {
+    font-size: 16px;
+    padding: 14px 12px;
+  }
+
+  .campo {
+    height: 20px;
+    padding-left: 12px;
+    font-size: 12px; 
+  }
+
+  .boton-get {
+    padding: 10px 10px;
+    font-size: 13px;
+    margin-top: 10px;
+  }
+
+  .iconos-redes img {
+    width: 25px;
+    margin-left: 8px;
   }
 
   .tarjetas-genial {
@@ -548,9 +646,71 @@ p, li, a, .descripcion, .campo {
     flex-wrap: wrap;
     justify-content: center;
   }
-}
 
-@media (max-width: 480px) {
+  .sublista-contenedor {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sublista-imagen {
+    width: 80%;
+    max-width: 300px;
+    height: 200px;
+    margin: 0 auto 20px;
+  }
+
+  .sublista-texto {
+    text-align: center;
+    width: 90%;
+  }
+
+  .estandar-contenedor {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .estandar-imagen {
+    width: 80%;
+    max-width: 300px;
+    height: 150px;
+    margin: 0 auto 20px;
+  }
+
+  .estandar-texto {
+    text-align: center;
+    width: 90%;
+  }
+
+  .pestanas-contenedor {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pestanas-imagen {
+    width: 80%;
+    max-width: 300px;
+    height: 200px;
+    margin: 0 auto 20px;
+  }
+
+  .pestanas-texto {
+    text-align: center;
+    width: 90%;
+  }
+
+  .pestanas-lista {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .pestana, .pestana-activ {
+    padding: 10px 20px;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
   .encabezado {
     padding-top: 50px;
     background-size: auto;
@@ -559,7 +719,59 @@ p, li, a, .descripcion, .campo {
     width: 25px;
     margin-left: 8px;
   }
+  .sublista-contenedor {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sublista-imagen {
+    width: 80%;
+    max-width: 300px;
+    height: 200px;
+    margin: 0 auto 20px;
+  }
+  .sublista-texto {
+    text-align: center;
+    width: 90%; 
+  }
+  .estandar-contenedor {
+    flex-direction: column;
+    align-items: center; 
+  }
+  .estandar-imagen {
+    width: 80%;
+    max-width: 300px;
+    height: 150px; 
+    margin: 0 auto 20px; 
+  }
 
+  .estandar-texto {
+    text-align: center;
+    width: 90%; 
+  }
+  .pestanas-imagen {
+    width: 80%;
+    max-width: 300px;
+    height: 200px;
+    margin: 0 auto 20px;
+  }
+
+  .pestanas-texto {
+    text-align: center;
+    width: 90%;
+  }
+
+  .pestanas-lista {
+    flex-direction: row;
+    width: 100%; 
+    justify-content: center; 
+    gap: 10px;
+  }
+
+  
+  .pestanas-contenedor {
+    flex-direction: column;
+    align-items: center; 
+  }
   .tarjetas-genial {
     display: flex;
     flex-wrap: wrap;
@@ -581,7 +793,7 @@ p, li, a, .descripcion, .campo {
     margin-top: auto;
 
   }
-  .campo{
+  .campo {
   height: 20px;
   border-bottom: 1px solid #eee;
   padding-left: 25px;
@@ -601,5 +813,7 @@ p, li, a, .descripcion, .campo {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+   }
   }
+ }
 }
