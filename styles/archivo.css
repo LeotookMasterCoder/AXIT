@@ -28,14 +28,46 @@ p, li, a, .descripcion, .campo {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   padding: 14px 20px;
 }
 
 .logo img{
-  height: 32px;
-  display: block;
+  height: 45px;
+  display: flex;
+}
+.pie {
+  background: #111;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.pie-contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.pie-texto {
+  margin-bottom: 10px;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.pie-iconos {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.pie-iconos img {
+  width: 24px;
+  height: 24px;
 }
 
 .nav-enlaces a{
@@ -45,18 +77,18 @@ p, li, a, .descripcion, .campo {
   font-size: 14px;
 }
 
-.encabezado{
+.encabezado {
   background-image: url('../assets/images/headerBg.png');
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   color: #fff;
   padding-top: 80px;
-  min-height: 720px;
+  min-height: 600px;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
-
 .encabezado-contenedor{
   max-width: 1200px;
   margin: 0 auto;
@@ -75,14 +107,14 @@ p, li, a, .descripcion, .campo {
 }
 
 .marca-logo{
-  width: 110px;
+  width: 200px;
   height: auto;
   display: block;
 }
 
 .titulo-principal{
   font-family: 'Open Sans', sans-serif;
-  font-size: 44px;
+  font-size: 30px;
   color: #fff;
   margin: 6px 0;
 }
@@ -101,10 +133,11 @@ p, li, a, .descripcion, .campo {
 }
 
 .caja-prueba{
-  width: 360px;
+  width: 300px;
   background: #fff;
   color: #222;
   border-radius: 3px;
+  margin-right: 75px;
 }
 
 .titulo-caja{
@@ -112,16 +145,16 @@ p, li, a, .descripcion, .campo {
   font-size: 18px;
   text-align: center;
   background: #f5f5f5;
-  padding: 18px 16px;
+  padding: 18px 10px;
   margin: 0;
 }
 .campo{
-  height: 48px;
-  border-bottom: 1px solid #eee;
-  padding-left: 16px;
+  height: 40px;
+  padding-left: 30px;
   display: flex;
   align-items: center;
   color: #bdbdbd;
+  border-bottom: 1px solid #eee;
   font-size: 14px;
 }
 
@@ -138,10 +171,10 @@ p, li, a, .descripcion, .campo {
   border: none;
   color: #fff;
   font-weight: 600;
-  padding: 12px 20px;   
+  padding: 12px 10px;   
   width: 100%;
   cursor: pointer;
-  margin-top: 170px;     
+  margin-top: 90px;     
   border-radius: 3px 3px;
 }
 .Rectangulo2 {
@@ -182,10 +215,15 @@ p, li, a, .descripcion, .campo {
   justify-content: space-between;
   align-items: center;
 }
+.texto-redes {
+  margin-bottom: 10px;
+}
 
 .iconos-redes img{
-  width: 50px;
-  margin-left: 12px;
+  width: 46px;
+  height: 30px;
+  margin-right: 5px;
+
 }
 .texto-naranja {
   color: #f9974a;
@@ -420,7 +458,7 @@ p, li, a, .descripcion, .campo {
   background: url('../assets/images/bg2.png');
   color: #fff;
   padding: 30px 20px;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
 }
@@ -464,8 +502,44 @@ p, li, a, .descripcion, .campo {
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
+}
+.pie {
+  background-color: #111;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.pie-contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.pie-iconos {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.pie-iconos img {
+  width: 244px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+.pie-texto {
+  font-size: 12px;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  margin: 0;
 }
 
 @media (max-width: 1279px) {
@@ -475,7 +549,8 @@ p, li, a, .descripcion, .campo {
   }
   .logo img {
   height: 20px;
-  display: block;
+  display: flex;
+
 }
   .boton-Popular1 {
   background: #f9974a;
@@ -543,13 +618,12 @@ p, li, a, .descripcion, .campo {
   width: 300px;
   height: 200px;
   }
-
   .lista-testimonios {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-@media (min-width: 480px) {
+@media (min-width: 352px) {
   .encabezado {
     padding-top: 50px;
     background-size: auto;
@@ -594,14 +668,19 @@ p, li, a, .descripcion, .campo {
     font-size: 13px; 
     margin: 10px auto; 
   }
-
   .caja-prueba {
-    width: 90%;
-    max-width: 280px; 
-    margin-top: 20px;
-    margin-left: 50px;
+    width: 200px;
+    font-size: 50px;
+    margin-right: 40px;
+    border-radius: 3px;
+    margin-top: auto;
+}
+  .banner-final {
+    padding: 20px 10px;
+    background-size: cover;
+    background-position: center;
+    font-size: 14px;
   }
-
   .titulo-caja {
     font-size: 16px;
     padding: 14px 12px;
@@ -635,12 +714,38 @@ p, li, a, .descripcion, .campo {
     margin-bottom: 20px;
   }
 
-  .planes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  .plan {
+    width: 90%;
+    margin: 10px auto;
+    font-size: 14px;
   }
 
+  .plan-header {
+    padding: 20px 10px;
+  }
+
+  .plan-nombre {
+    font-size: 16px;
+  }
+
+  .plan-precio {
+    font-size: 40px;
+  }
+
+  .plan-precio .simbolo {
+    font-size: 22px;
+  }
+
+  .plan-popular {
+    font-size: 14px;
+    padding: 12px 0;
+  }
+
+  .plan-detalle {
+    font-size: 13px;
+    padding: 10px 0;
+  }
+ }
   .lista-testimonios {
     display: flex;
     flex-wrap: wrap;
@@ -791,7 +896,6 @@ p, li, a, .descripcion, .campo {
     color: #222;
     border-radius: 3px;
     margin-top: auto;
-
   }
   .campo {
   height: 20px;
@@ -816,4 +920,3 @@ p, li, a, .descripcion, .campo {
    }
   }
  }
-}
